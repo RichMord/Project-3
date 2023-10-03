@@ -1,0 +1,126 @@
+.top {
+	padding: 30px 0 189px;
+
+	&__inner {
+		position: relative;
+	}
+
+	&__content {
+		width: 370px;
+		padding: 165px 0 250px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 240px;
+	}
+
+	&__title {
+		font-family: "YesevaOne-Regular", cursive;
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		margin-bottom: 48px;
+	}
+
+	&__buy {
+	}
+
+	@media (max-width: $md2 + px) {
+		&__content {
+			width: 333px;
+			padding: 90px 0 56px 0;
+		}
+
+		&__img-big {
+			width: 655px;
+		}
+
+		&__img {
+			left: 300px;
+		}
+	}
+
+	@media (max-width: $md3 + px) {
+		&__content {
+			width: 233px;
+			padding: 100px 0 85px 0;
+		}
+
+		&__title {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			margin-bottom: 20px;
+			line-height: 150%;
+		}
+
+		&__img {
+			left: 244px;
+		}
+	}
+
+	@media (max-width: $md4 + px) {
+		padding: 30px 0 112px;
+
+		&__content {
+			width: 180px;
+			padding: 80px 0 0px 0;
+		}
+
+		&__title {
+			font-size: 15px;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			margin-bottom: 15px;
+		}
+
+		&__img {
+			left: 177px;
+		}
+
+		&__img-big {
+			width: 309px;
+		}
+	}
+
+	@media (max-width: $md5 + px) {
+		padding: 30px 0 59px;
+
+		&__content {
+			width: 203px;
+			padding: 30px 0 0px 0;
+		}
+
+		&__title {
+			font-size: 18px;
+		}
+
+		&__text {
+			line-height: normal;
+		}
+
+		&__img {
+			left: auto;
+			top: -10px;
+			right: 0;
+		}
+
+		&__img-big {
+			width: 160px;
+		}
+	}
+
+	@media (max-width: 333px) {
+		&__img-big {
+			width: 120px;
+		}
+	}
+}

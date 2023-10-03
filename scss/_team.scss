@@ -1,0 +1,116 @@
+.team {
+	background-color: #a5978e;
+	color: #fff;
+	padding: 60px 0 84px;
+	&__inner {
+	}
+
+	&__description {
+	}
+
+	&__content {
+		padding-left: 37px;
+		gap: 75px;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__img {
+		width: 220px;
+		height: 220px;
+	}
+
+	&__img-box {
+		position: absolute;
+		bottom: 8px;
+		right: 0;
+		width: 168px;
+		background-color: #7b6152;
+		padding: 14px 20px;
+		text-align: center;
+		line-height: normal;
+	}
+
+	&__name {
+		font-family: "YesevaOne-Regular";
+		line-height: normal;
+		font-size: 12px;
+		margin-bottom: 6px;
+	}
+
+	&__text {
+		font-size: 10px;
+	}
+
+	@media (max-width: $md2 + px) {
+		padding: 50px 0;
+
+		&__content {
+			padding-left: 7px;
+			gap: 30px 20px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		&__img {
+			width: 155px;
+			height: 155px;
+		}
+
+		&__content {
+			padding-left: 0px;
+			gap: 30px 14px;
+		}
+
+		&__img-box {
+			width: 106px;
+			padding: 10px 5px;
+		}
+
+		&__name {
+			font-size: 8px;
+		}
+	
+		&__text {
+			font-size: 6px;
+		}
+	}
+
+	@media (max-width: $md3 + px) {
+		&__content {
+			padding: 0 70px;
+		}
+	}
+
+	@media(max-width: $md4 + px) {
+		&__content {
+			padding: 0 0;
+		}
+	}
+
+	@media(max-width: $md5 + px) {
+		&__content {
+			padding: 0 30px;
+		}
+
+		&__img {
+			width: 210px;
+			height: 220px;
+		}
+
+		&__img-box {
+			width: 150px;
+			padding: 14px 8px;
+		}
+
+		&__name {
+			font-size: 11px;
+		}
+	
+		&__text {
+			font-size: 10px;
+		}
+	}
+}

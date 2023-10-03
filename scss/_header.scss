@@ -1,0 +1,40 @@
+.header {
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 5px;
+	}
+
+	@media (max-width: 655px) {
+		.menu {
+			order: 1;
+
+			._btn-menu {
+				display: flex;
+			}
+
+			&__list {
+				opacity: 0;
+				width: 153px;
+				background-color: #7b6152;
+				flex-direction: column;
+				padding: 25px 35px 25px 45px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform: translateY(-100%);
+				transition: transform .5s ease, opacity .5s ease;
+				z-index: 5;
+			}
+			&__list._menu-open {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+			&__list-link {
+				color: #fff8f3;
+			}
+		}
+	}
+}

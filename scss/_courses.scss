@@ -1,0 +1,136 @@
+.courses {
+	padding: 150px 0 80px;
+	margin-bottom: 150px;
+
+	&__inner {
+	}
+
+	&__description {
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__content {
+		margin: 0 auto;
+		gap: 126px;
+	}
+
+	&__item {
+		text-align: center;
+		width: 268px;
+		font-family: "YesevaOne-Regular";
+	}
+
+	&__item-img-container {
+		position: relative;
+
+		span {
+			position: absolute;
+			font-size: 11px;
+			background-color: #bea495;
+			color: #fff;
+
+			&:nth-child(2) {
+				padding: 15px 10px;
+				left: 0;
+				top: 166px;
+			}
+			&:nth-child(3) {
+				padding: 7px 10px;
+				left: 0;
+				top: 224px;
+			}
+			&:nth-child(4) {
+				padding: 19px 10px;
+				right: -14px;
+				bottom: -13px;
+			}
+		}
+	}
+
+	&__item-img {
+	}
+
+	&__item-title {
+		margin-top: 28px;
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	&__item-text {
+		margin-bottom: 23px;
+		font-family: "Comfortaa-Regular";
+		font-size: 14px;
+	}
+
+	@media (max-width: 660px) {
+		padding: 50px 0 80px;
+		margin-bottom: 50px;
+	}
+
+	@media (max-width: 968px) {
+		&__item-title {
+			font-size: 12px;
+			margin-top: 23px;
+			margin-bottom: 8px;
+		}
+
+		&__item-text {
+			font-size: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 835px) {
+	.courses {
+		&__item {
+			max-width: 180px;
+		}
+
+		&__item-img {
+			width: 180px;
+		}
+
+		&__item-img-container {
+			span {
+				font-size: 10px;
+
+				&:nth-child(2) {
+					padding: 12px 10px;
+					left: 0;
+					top: 120px;
+				}
+				&:nth-child(3) {
+					padding: 5px 10px;
+					left: 0;
+					top: 170px;
+				}
+				&:nth-child(4) {
+					padding: 15px 10px;
+					right: -7px;
+					bottom: -8px;
+				}
+			}
+		}
+		._btn-buy {
+			padding: 14.5px 30px;
+		}
+	}
+}
+
+@media (max-width: 430px) {
+	.courses {
+		&__item {
+			max-width: 255px;
+		}
+
+		&__item-img {
+			width: 255px;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+// Шрифты
+@import "scss/fonts";
+//@import "scss/icomoon";
+
+$fontFamily: "Comfortaa-Regular", cursive;
+$fontSize: 14;
+
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1180;
+$md1: $maxWidthContainer + 12;
+$md2: 1000;
+$md3: 768;
+$md4: 480;
+$md5: 360;
+
+$mainColor: #000;
+
+// Обнуление
+@import "scss/null";
+
+@media (max-width: $md3 + px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+body {
+	color: $mainColor;
+	background-color: #fff8f3;
+	font-weight: 400;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	@media (max-width: $md2 + px) {
+		padding: 0 20px;
+	}
+	@media (max-width: $md3 + px) {
+		padding: 0;
+		max-width: 640px;
+	}
+	@media (max-width: 655px) {
+		padding: 0 10px;
+	}
+}
+
+// Готовые классы
+@import "scss/ui";
+
+//Стили по блокам
+@import "scss/header";
+@import "scss/footer";
+@import "scss/top";
+@import "scss/about";
+@import "scss/section";
+@import "scss/products";
+@import "scss/etaps";
+@import "scss/courses";
+@import "scss/team";
+@import "scss/clients";
+@import "scss/certificates";
+@import "scss/questions";
+@import "scss/promo";
+@import "scss/contacts";

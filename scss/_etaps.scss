@@ -1,0 +1,52 @@
+.etaps {
+	padding: 150px 0 80px;
+
+	&__inner {
+	}
+
+	&__description {
+	}
+
+	&__title {
+	}
+
+	&__text {
+		padding-bottom: 30px;
+	}
+
+	&__content {
+		list-style: none;
+		counter-reset: my-counter;
+		gap: 72px 20px;
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		gap: 40px;
+
+		&::before {
+			content: counter(my-counter, decimal-leading-zero);
+			counter-increment: my-counter;
+			color: #bea495;
+			font-size: 30px;
+			position: absolute;
+			bottom: 0;
+			font-family: "YesevaOne-Regular";
+		}
+
+		&:nth-child(4n + 3),
+		&:nth-child(4n) {
+			&::before {
+				right: 0;
+			}
+		}
+	}
+
+	&__img {
+	}
+
+	@media (max-width: 660px) {
+		padding: 50px 0 80px;
+	}
+}
